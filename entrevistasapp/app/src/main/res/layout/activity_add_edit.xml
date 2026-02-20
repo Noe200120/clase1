@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Card Principal -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:shape="rectangle">
+
+            <!-- Título -->
+            <TextView
+                android:text="Nueva Entrevista"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:layout_marginBottom="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Campos -->
+            <EditText
+                android:id="@+id/etIdOrden"
+                android:inputType="number"
+                android:hint="ID de Orden"
+                android:background="@android:drawable/edit_text"
+                android:padding="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etDescripcion"
+                android:hint="Descripción"
+                android:background="@android:drawable/edit_text"
+                android:padding="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etPeriodista"
+                android:hint="Nombre del Periodista"
+                android:background="@android:drawable/edit_text"
+                android:padding="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- Botón imagen -->
+            <Button
+                android:id="@+id/btnPickImage"
+                android:text="Seleccionar Imagen"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Preview Imagen -->
+            <ImageView
+                android:id="@+id/imgPreview"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:background="#DDDDDD"
+                android:padding="4dp"
+                android:contentDescription="Vista previa"/>
+
+            <!-- Botón grabar audio -->
+            <Button
+                android:id="@+id/btnRecordAudio"
+                android:text="Grabar Audio"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvAudioStatus"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#616161"
+                android:text="Audio: (no grabado)"/>
+
+            <!-- Botón guardar -->
+            <Button
+                android:id="@+id/btnSave"
+                android:text="Guardar Entrevista"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#0077CC"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

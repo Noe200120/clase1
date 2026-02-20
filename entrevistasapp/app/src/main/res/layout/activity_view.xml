@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Encabezado decorado -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/bg_header">
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detalle de Entrevista"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="16dp"/>
+        </RelativeLayout>
+
+        <!-- Imagen con bordes redondeados -->
+        <ImageView
+            android:id="@+id/imgDetail"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_rounded"
+            android:layout_margin="16dp"/>
+
+        <!-- Contenido -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#1E1E1E"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/tvPeriodista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="4dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#777777"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Botones en estilo pastilla -->
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="▶ Reproducir Audio"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_button_blue"
+                android:padding="14dp"
+                android:layout_marginBottom="12dp"
+                android:allCaps="false"/>
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🗑 Eliminar Entrevista"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bg_button_red"
+                android:padding="14dp"
+                android:allCaps="false"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
